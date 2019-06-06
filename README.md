@@ -13,6 +13,6 @@ We worked with dogs in plain Java. This project returns dog data using Rest APIs
 
 Deploy java-dogs to Heroku
   * Specifically check to see if Message Queues are working
-  * If that are NOT, disable the use of RabbitMQ
+  * If they are NOT, disable the use of RabbitMQ
     * This is straight forward - should be commenting out a few lines. If you are deleting signaficant amounts of code, you are on the wrong track!
 
