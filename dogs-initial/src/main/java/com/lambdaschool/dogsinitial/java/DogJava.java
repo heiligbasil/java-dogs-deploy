@@ -1,8 +1,8 @@
-package com.lambdaschool.dogsinitial;
+package com.lambdaschool.dogsinitial.java;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-public class Dog
+public class DogJava
 {
     private static final AtomicLong counter = new AtomicLong();
     private long id;
@@ -10,7 +10,7 @@ public class Dog
     private int weight;
     private boolean apartmentSuitable;
 
-    public Dog(String breed, int weight, boolean apartmentSuitable)
+    public DogJava(String breed, int weight, boolean apartmentSuitable)
     {
         this.id = counter.incrementAndGet();
         this.breed = breed;
@@ -18,7 +18,7 @@ public class Dog
         this.apartmentSuitable = apartmentSuitable;
     }
 
-    public Dog(Dog toClone)
+    public DogJava(DogJava toClone)
     {
         this.id = toClone.getId();
         this.breed = toClone.getBreed();
