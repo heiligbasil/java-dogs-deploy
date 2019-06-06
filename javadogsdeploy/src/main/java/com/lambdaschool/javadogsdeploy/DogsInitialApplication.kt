@@ -1,10 +1,5 @@
 package com.lambdaschool.javadogsdeploy
 
-import org.springframework.amqp.core.Binding
-import org.springframework.amqp.core.BindingBuilder
-import org.springframework.amqp.core.Queue
-import org.springframework.amqp.core.TopicExchange
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.ApplicationContext
@@ -29,7 +24,7 @@ open class DogsInitialApplication
         fun main(args: Array<String>)
         {
             ourDogList = DogList()
-            val ctx: ApplicationContext = SpringApplication.run(DogsInitialApplication::class.java, *args)
+            val ctx: ApplicationContext = SpringApplication.run(DogsInitialApplication::class.java, *args) as ApplicationContext
 
             val dispatcherServlet: DispatcherServlet = ctx.getBean("dispatcherServlet") as DispatcherServlet
             dispatcherServlet.setThrowExceptionIfNoHandlerFound(true)
@@ -38,7 +33,7 @@ open class DogsInitialApplication
         fun getOurDogList(): DogList = ourDogList
     }
 
-    @Bean
+    /*@Bean
     open fun appExchange(): TopicExchange
     {
         return TopicExchange(EXCHANGE_NAME)
@@ -85,6 +80,6 @@ open class DogsInitialApplication
     open fun producerJackson2MessageConverter(): Jackson2JsonMessageConverter
     {
         return Jackson2JsonMessageConverter()
-    }
+    }*/
 
 }

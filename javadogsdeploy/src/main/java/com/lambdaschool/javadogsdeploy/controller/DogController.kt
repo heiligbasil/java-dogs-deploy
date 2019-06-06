@@ -7,7 +7,6 @@ import com.lambdaschool.javadogsdeploy.model.Dog
 import com.lambdaschool.javadogsdeploy.model.MessageDetail
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -28,8 +27,8 @@ class DogController
         private val logger = LoggerFactory.getLogger(DogController::class.java)
     }
 
-    @Autowired
-    internal var rabbitTemplate: RabbitTemplate? = null
+    /*@Autowired
+    internal var rabbitTemplate: RabbitTemplate? = null*/
 
     // localhost:2019/dogs/dogs
     @GetMapping(value = ["/dogs"], produces = ["application/json"])
@@ -40,7 +39,7 @@ class DogController
         val messageLog: String = "${request.requestURI} accessed on ${LocalDateTime.now()}"
         loggerDogs.info(messageLog)
         val message = MessageDetail(messageLog, 7, false)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_HIGH, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_HIGH, message)
 
 
         val rtnDogs: MutableList<Dog> = DogsInitialApplication.getOurDogList().dogList
@@ -61,7 +60,7 @@ class DogController
 
         //logger.info(messageLog)
         val message = MessageDetail(messageLog, 1, true)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
 
 
         val rtnDog: Dog? = DogsInitialApplication.getOurDogList().findDog(CheckDog { d -> d.id == id })
@@ -81,7 +80,7 @@ class DogController
         val messageLog: String = "${request.requestURI} accessed with breed $breed on ${LocalDateTime.now()}"
         //logger.info(messageLog)
         val message = MessageDetail(messageLog, 1, true)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
 
 
         val rtnDogs: List<Dog> = DogsInitialApplication.getOurDogList().findDogs(CheckDog { d -> d.breed.toLowerCase().equals(breed.toLowerCase()) })
@@ -101,7 +100,7 @@ class DogController
         val messageLog: String = "${request.requestURI} accessed on ${LocalDateTime.now()}"
         logger.info(messageLog)
         val message = MessageDetail(messageLog, 1, true)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
 
 
         val dogList: MutableList<Dog> = DogsInitialApplication.getOurDogList().dogList
@@ -121,7 +120,7 @@ class DogController
         val messageLog: String = "${request.requestURI} accessed on ${LocalDateTime.now()}"
         logger.info(messageLog)
         val message = MessageDetail(messageLog, 1, true)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_LOW, message)
 
 
         val dogList: List<Dog> = DogsInitialApplication.getOurDogList().dogList.filter { it.isApartmentSuitable }.sortedBy { a -> a.breed }

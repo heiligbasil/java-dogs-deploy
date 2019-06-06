@@ -6,7 +6,6 @@ import com.lambdaschool.javadogsdeploy.exception.ResourceNotFoundException
 import com.lambdaschool.javadogsdeploy.model.ErrorDetail
 import com.lambdaschool.javadogsdeploy.model.MessageDetail
 import org.slf4j.LoggerFactory
-import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.beans.TypeMismatchException
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpHeaders
@@ -29,8 +28,8 @@ class RestExceptionHandler : ResponseEntityExceptionHandler()
         private val loggerFactory = LoggerFactory.getLogger(DogController::class.java)
     }
 
-    @Autowired
-    internal var rabbitTemplate: RabbitTemplate? = null
+    /*@Autowired
+    internal var rabbitTemplate: RabbitTemplate? = null*/
 
     @ExceptionHandler(ResourceNotFoundException::class)
     fun handleResourceNotFoundException(rnfe: ResourceNotFoundException, request: HttpServletRequest): ResponseEntity<*>
@@ -38,7 +37,7 @@ class RestExceptionHandler : ResponseEntityExceptionHandler()
         val messageLog: String = "$request on ${LocalDateTime.now()}"
         loggerFactory.info(messageLog)
         val message = MessageDetail(messageLog, 2, false)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
 
         val errorDetail = ErrorDetail()
         errorDetail.setTimestamp(Date().time)
@@ -95,7 +94,7 @@ class RestExceptionHandler : ResponseEntityExceptionHandler()
         val messageLog: String = "$status on ${LocalDateTime.now()}"
         loggerFactory.info(messageLog)
         val message = MessageDetail(messageLog, 2, false)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
 
         val errorDetail = ErrorDetail()
         errorDetail.setTimestamp(Date().time)
@@ -112,7 +111,7 @@ class RestExceptionHandler : ResponseEntityExceptionHandler()
         val messageLog: String = "$status on ${LocalDateTime.now()}"
         loggerFactory.info(messageLog)
         val message = MessageDetail(messageLog, 2, false)
-        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
+//        rabbitTemplate!!.convertAndSend(DogsInitialApplication.QUEUE_NAME_ERROR, message)
 
         val errorDetail = ErrorDetail()
         errorDetail.setTimestamp(Date().time)
