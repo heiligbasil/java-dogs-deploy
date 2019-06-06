@@ -98,7 +98,7 @@
         <appender-ref ref="FILE_BREED"/>
         <appender-ref ref="STDOUT"/>
     </logger>
-    <logger name="com.lambdaschool" level="INFO" additivity="false">
+    <logger name="com.lambdaschool" level="TRACE" additivity="false">
         <appender-ref ref="TOMCAT"/>
         <appender-ref ref="FILE_DOGS"/>
         <appender-ref ref="FILE_ID"/>
