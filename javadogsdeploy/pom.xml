@@ -10,7 +10,7 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lambdaschool</groupId>
-    <artifactId>projectrestdogs</artifactId>
+    <artifactId>javadogsdeploy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Java-Dogs-Deploy</name>
     <description>Afternoon Project for Day 4 of Java-Web APIs</description>

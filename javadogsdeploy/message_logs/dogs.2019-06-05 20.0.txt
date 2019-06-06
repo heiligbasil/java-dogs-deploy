@@ -21,7 +21,7 @@
 [2019-06-05 20:01:38.272] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
 [2019-06-05 20:01:38.279] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [546] [INFO ] Completed initialization in 6 ms
 [2019-06-05 20:01:38.323] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(1)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#25428136:0/SimpleConnection@2fad77e6 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55934]
-[2019-06-05 20:01:43.543] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-1] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:01:43.542984600
+[2019-06-05 20:01:43.543] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-1] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:01:43.542984600
 [2019-06-05 20:02:24.333] [org.springframework.boot.StartupInfoLogger] [restartedMain] [50] [INFO ] Starting DogsInitialApplication.Companion on LAPTOP-NL89C743 with PID 4976 (C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial\target\classes started by basil in C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial)
 [2019-06-05 20:02:24.335] [org.springframework.boot.SpringApplication] [restartedMain] [675] [INFO ] No active profile set, falling back to default profiles: default
 [2019-06-05 20:02:24.379] [org.springframework.core.log.CompositeLog] [background-preinit] [122] [WARN ] For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
@@ -45,7 +45,7 @@
 [2019-06-05 20:02:26.659] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(1)-192.168.0.18] [546] [INFO ] Completed initialization in 6 ms
 [2019-06-05 20:02:26.935] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(3)-192.168.0.18] [460] [INFO ] Attempting to connect to: [localhost:5672]
 [2019-06-05 20:02:27.012] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(3)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#6989afa0:0/SimpleConnection@3799559e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55973]
-[2019-06-05 20:02:30.526] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-2] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:02:30.525368900
+[2019-06-05 20:02:30.526] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-2] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:02:30.525368900
 [2019-06-05 20:44:43.085] [org.springframework.boot.StartupInfoLogger] [restartedMain] [50] [INFO ] Starting DogsInitialApplication.Companion on LAPTOP-NL89C743 with PID 12156 (C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial\target\classes started by basil in C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial)
 [2019-06-05 20:44:43.087] [org.springframework.boot.SpringApplication] [restartedMain] [675] [INFO ] No active profile set, falling back to default profiles: default
 [2019-06-05 20:44:43.118] [org.springframework.core.log.CompositeLog] [background-preinit] [122] [WARN ] For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
@@ -69,4 +69,4 @@
 [2019-06-05 20:44:45.772] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
 [2019-06-05 20:44:45.778] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [546] [INFO ] Completed initialization in 6 ms
 [2019-06-05 20:44:45.802] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(3)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#4868b158:0/SimpleConnection@3a5ed2a7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56375]
-[2019-06-05 20:44:50.839] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-3] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:44:50.838691700
+[2019-06-05 20:44:50.839] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-3] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T20:44:50.838691700

@@ -31,8 +31,8 @@ ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.lambdaschool.dogsinitial.DogsInitialApplication$Companion.main(DogsInitialApplication.kt:32)
-	at com.lambdaschool.dogsinitial.DogsInitialApplication.main(DogsInitialApplication.kt)
+	at com.lambdaschool.javadogsdeploy.DogsInitialApplication$Companion.main(DogsInitialApplication.kt:32)
+	at com.lambdaschool.javadogsdeploy.DogsInitialApplication.main(DogsInitialApplication.kt)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,4 +61,4 @@ ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback
 [2019-06-05 19:56:05.958] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(1)-192.168.0.18] [546] [INFO ] Completed initialization in 5 ms
 [2019-06-05 19:56:06.222] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(3)-192.168.0.18] [460] [INFO ] Attempting to connect to: [localhost:5672]
 [2019-06-05 19:56:06.274] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(3)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#33ac1328:0/SimpleConnection@6478b9e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55841]
-[2019-06-05 19:56:22.733] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-1] [59] [INFO ] /dogs/5 accessed with id 5 on 2019-06-05T19:56:22.733641900
+[2019-06-05 19:56:22.733] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-1] [59] [INFO ] /dogs/5 accessed with id 5 on 2019-06-05T19:56:22.733641900

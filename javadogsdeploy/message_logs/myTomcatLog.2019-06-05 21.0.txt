@@ -21,7 +21,7 @@
 [2019-06-05T21:22:26.026] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(1)-192.168.0.18] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
 [2019-06-05T21:22:26.026] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(1)-192.168.0.18] [546] [INFO ] Completed initialization in 8 ms
 [2019-06-05T21:22:26.026] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(2)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#13156757:0/SimpleConnection@46760cfa [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54410]
-[2019-06-05T21:22:32.032] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-1] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T21:22:32.013942100
+[2019-06-05T21:22:32.032] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-1] [40] [INFO ] /dogs/dogs accessed on 2019-06-05T21:22:32.013942100
 [2019-06-05T21:29:17.017] [org.springframework.boot.StartupInfoLogger] [restartedMain] [50] [INFO ] Starting DogsInitialApplication.Companion on LAPTOP-NL89C743 with PID 16016 (C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial\target\classes started by basil in C:\Users\basil\AndroidStudioProjects\java-dogs-logging\dogs-initial)
 [2019-06-05T21:29:17.017] [org.springframework.boot.SpringApplication] [restartedMain] [675] [INFO ] No active profile set, falling back to default profiles: default
 [2019-06-05T21:29:17.017] [org.springframework.core.log.CompositeLog] [background-preinit] [122] [WARN ] For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
@@ -45,4 +45,4 @@
 [2019-06-05T21:29:19.019] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
 [2019-06-05T21:29:19.019] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(2)-192.168.0.18] [546] [INFO ] Completed initialization in 7 ms
 [2019-06-05T21:29:19.019] [org.springframework.amqp.rabbit.connection.AbstractConnectionFactory] [RMI TCP Connection(1)-192.168.0.18] [496] [INFO ] Created new connection: rabbitConnectionFactory#4f520366:0/SimpleConnection@631c2571 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54659]
-[2019-06-05T21:29:24.024] [com.lambdaschool.dogsinitial.controller.DogController] [http-nio-2019-exec-1] [41] [INFO ] /dogs/dogs accessed on 2019-06-05T21:29:24.633742700
+[2019-06-05T21:29:24.024] [com.lambdaschool.javadogsdeploy.controller.DogController] [http-nio-2019-exec-1] [41] [INFO ] /dogs/dogs accessed on 2019-06-05T21:29:24.633742700
